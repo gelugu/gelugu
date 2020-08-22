@@ -1,0 +1,26 @@
+.header {
+  margin: 0;
+}
+
+.nav-bar {
+  background-color: rgb(65, 65, 65);
+  margin: 0;
+  margin-bottom: 1rem;
+}
+
+.tab {
+  background-color: rgb(65, 65, 65);
+  color: rgb(215, 215, 215);
+  border: none;
+  border-left: 1px solid rgb(45, 45, 45);
+  width: 100px;
+  height: 40px;
+}
+
+.active-tab {
+  background-color: rgb(45, 45, 45);
+}
+
+.content {
+  margin: 1rem 3rem;
+}

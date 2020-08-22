@@ -1,0 +1,63 @@
+.projects {
+  display: flex;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  background-color: rgb(65, 65, 65);
+  border-radius: 5px;
+  width: 20rem;
+  height: fit-content;
+}
+
+.card-title {
+}
+
+.card-text {
+  margin-left: 1rem;
+  align-self: start;
+}
+
+.card-lang {
+  margin-right: 1rem;
+  align-self: end;
+}
+.react {
+  color: aqua;
+}
+
+.card-footer {
+  display: flex;
+  width: 90%;
+  justify-content: space-between;
+  margin: 1rem;
+}
+
+.card-button {
+  border: none;
+  background-color: rgb(60, 60, 60);
+  color: rgb(215, 215, 215);
+  height: 2rem;
+}
+
+.card-link {
+
+}
+a {
+  color: rgb(95, 125, 60);
+}
+a:link {
+  text-decoration: none;
+}
+a:visited {
+  text-decoration: none;
+}
+a:active {
+  text-decoration: none;
+}
+a:hover {
+  color: rgb(95, 125, 60);
+}

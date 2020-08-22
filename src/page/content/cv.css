@@ -1,0 +1,83 @@
+.cv {
+}
+
+.cv-quick-info {
+  margin-left: 4rem;
+  display: flex;
+  flex-direction: column;
+
+  color: rgb(95, 125, 60);
+}
+
+.cv-qi-spec {
+}
+
+.cv-qi-mail {
+}
+
+a {
+  color: rgb(95, 125, 60);
+}
+a:link {
+  text-decoration: none;
+}
+a:visited {
+  text-decoration: none;
+}
+a:active {
+  text-decoration: none;
+}
+a:hover {
+  color: rgb(95, 125, 60);
+}
+
+.cv-qi-phone {
+}
+
+.about-me {
+  margin-left: 2rem;
+  width: 40rem;
+}
+
+.about-me p {
+  padding: 0;
+  margin-left: 2rem;
+}
+
+.education {
+  margin-left: 2rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.education span {
+  margin-left: 2rem;
+}
+
+.work-experience {
+  margin-left: 2rem;
+}
+.work-experience h3 {
+  margin: 0;
+}
+.work-experience ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.we-job {
+  margin-left: 2rem;
+}
+.we-job span {
+  margin-left: 1rem;
+}
+
+.additional-skills {
+  margin-left: 2rem;
+}
+.additional-skills ul {
+  list-style: none;
+  padding: 0;
+  margin-left: 2rem;
+}
