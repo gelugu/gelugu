@@ -2,9 +2,33 @@
 
 body {
   margin: 0;
-  background-color: #242423;
-  color: #e8eddf;
+  background-color: var(--dark);
+  color: var(--light);
   font-family: 'Roboto Mono', monospace;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+:root {
+  /* colors */
+  --dark: #242423;
+  --grey: #333533;
+  --light-grey: #cfdbd5;
+  --light: #e8eddf;
+  --yellow: #f5cb5c;
+  --green: #588157;
+}
+
+a {
+  color: var(--green);
+}
+a:link {
+  text-decoration: none;
+}
+a:visited {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+  color: var(--yellow);
 }

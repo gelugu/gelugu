@@ -8,12 +8,10 @@ import Header from "./pages/Header";
 class App extends React.Component {
   render() {
     return (
-      <>
-        <Router>
-          <Header />
-          <Routes />
-        </Router>
-      </>
+      <Router>
+        <Header />
+        <Routes />
+      </Router>
     );
   }
 }

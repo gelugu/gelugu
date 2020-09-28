@@ -6,9 +6,9 @@
   display: flex;
   flex-direction: row;
 
-  background-color: #333533;
+  background-color: var(--grey);
 
-  border-left: .2rem solid #242423;
+  border-left: .2rem solid var(--dark);
 
   height: 2rem;
 }
@@ -18,19 +18,19 @@
   align-items: center;
   justify-content: center;
 
-  background-color: #333533;
-  color: rgb(215, 215, 215);
-  border-right: .2rem solid #242423;
+  background-color: var(--grey);
+  color: var(--light);
+  border-right: .2rem solid var(--dark);
   
   width: 5rem;
   height: 2rem;
 }
 .headerLink:hover {
-  color: #588157;
+  color: var(--yellow);
 }
 
 .active {
-  background-color: #242423;
+  background-color: var(--dark);
 }
 
 .content {

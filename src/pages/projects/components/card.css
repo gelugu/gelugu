@@ -1,0 +1,42 @@
+
+.card {
+  display: flex;
+  box-sizing: border-box;
+  margin: 1rem .25em;
+  flex-direction: column;
+  align-items: center;
+
+  background-color: var(--grey);
+  border-radius: .5rem;
+  width: 25rem;
+  height: fit-content;
+}
+
+.card-title {
+  color: var(--light-grey);
+}
+
+.card-text {
+  margin-left: 1rem;
+  align-self: start;
+}
+
+.card-lang {
+  margin-right: 1rem;
+}
+.react {
+  color: aqua;
+}
+
+.card-footer {
+  display: flex;
+  width: 90%;
+  justify-content: space-between;
+  margin: 1rem;
+}
+
+.card-links {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}

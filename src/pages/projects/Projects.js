@@ -1,42 +1,22 @@
-import React, { useState } from "react";
+import React from "react";
+
+import Card from "./components/Card"
 import "./projects.css";
 
-const Card = ({ title, text, lang, href, modal }) => {
-  const [visible, setVisible] = useState(true);
+const Projects = () => {
   return (
-    <div className="card">
-      <h2 className="card-title">{title}</h2>
-      <p className="card-text">{text}</p>
-      <h3 className={`card-lang ${lang.toLowerCase()}`}>{lang}</h3>
-      <div className="card-footer">
-        {modal ? (
-          <button onClick={setVisible.bind(null, true)} className="card-button">
-            Open modal
-          </button>
-        ) : null}
-        {href ? (
-          <a href={href} className="card-link">
-            github
-          </a>
-        ) : null}
-      </div>
+    <div className="projects">
+      <Card
+        title="ToDo app"
+        text="Personal task planner. I felt the need to implement it when I tried many similar programs. Something was more suitable, something had no competitive advantages at all. But still, the perfect solution was not found, and I wrote it for myself."
+        lang="React Native"
+        links={{
+          github: "https://github.com/gelugu/react-native-todo",
+          expo: "https://expo.io/@gelugu/rn-gelugu-todo/"
+        }}
+      />
     </div>
   );
 };
-
-class Projects extends React.Component {
-  render() {
-    return (
-      <div className="projects">
-        <Card
-          title="ToDo app"
-          text="React app for capture and schedule tasks as soon as you think about them."
-          lang="React Native"
-          href={"https://expo.io/@gelugu/rn-gelugu-todo/"}
-        />
-      </div>
-    );
-  }
-}
 
 export default Projects;
