@@ -1,9 +1,13 @@
 .projects {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
 }
 
 .card {
   display: flex;
+  box-sizing: border-box;
+  margin: 1rem .25em;
   flex-direction: column;
   align-items: center;
 

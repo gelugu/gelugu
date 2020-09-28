@@ -1,0 +1,38 @@
+.header {
+  margin: 0;
+}
+
+.navBar {
+  display: flex;
+  flex-direction: row;
+
+  background-color: #333533;
+
+  border-left: .2rem solid #242423;
+
+  height: 2rem;
+}
+
+.headerLink {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background-color: #333533;
+  color: rgb(215, 215, 215);
+  border-right: .2rem solid #242423;
+  
+  width: 5rem;
+  height: 2rem;
+}
+.headerLink:hover {
+  color: #588157;
+}
+
+.active {
+  background-color: #242423;
+}
+
+.content {
+  margin: 1rem 3rem;
+}

@@ -5,20 +5,18 @@ class CV extends React.Component {
   render() {
     return (
       <div className="cv">
-        <h1>Kraev Mikhail &#123;</h1>
-
+        <h1>Kraev Mikhail <span className="cv-bracket">&#123;</span></h1>
+        
         <div className="cv-quick-info">
           <span className="cv-qi-spec">
-            // JS Engineer - React, React Native, Vue
+            {"// JS Engineer - React, React Native, Vue"}
           </span>
-          <span className="cv-qi-mail">
-            // <a href="#">kraev.mixail@gmail.com</a>
-          </span>
-          <span className="cv-qi-phone">// +7 905 280 22 88</span>
+          <span>// <a href="mailto:kraev.mixail@gmail.com">kraev.mixail@gmail.com</a></span>
+          <span>// <a href="tel:+7-905-280-22-88">+7 905 280 22 88</a></span>
         </div>
 
         <div className="about-me">
-          <h2>About me &#123;</h2>
+          <h2>About me <span className="cv-bracket">&#123;</span></h2>
           <p>
             Занимаюсь программированием около 4-х лет, начинал с С/С++. Позже
             пробовал себя в Python, JavaScript (HTML+CSS), React (-native), Vue,
@@ -45,38 +43,39 @@ class CV extends React.Component {
             искать информацию как на русскоязычных, так и на англоязычных
             ресурсах. Техническую литературу воспринимаю отлично.
           </p>
-          <h2>&#125;</h2>
+          <h2><span className="cv-bracket">&#125;</span></h2>
         </div>
 
         <div className="education">
-          <h2>Education &#123;</h2>
-          <span>School - ВСОШ №1</span>
-          <span>University - ETU “LETI” (undergraduate)</span>
-          <h2>&#125;</h2>
+          <h2>Education <span className="cv-bracket">&#123;</span></h2>
+          <p>School - ВСОШ №1</p>
+          <p>University - ETU “LETI” (undergraduate)</p>
+          <h2><span className="cv-bracket">&#125;</span></h2>
         </div>
 
         <div className="work-experience">
-          <h2>Work experience &#123;</h2>
+          <h2>Work experience <span className="cv-bracket">&#123;</span></h2>
           <ul>
             <li>
               <div className="we-job">
-                <h3>Smart3d (2017 October - 2018 Jule) &#123;</h3>
+                <h3>Smart3d (2017 October - 2018 Jule) <span className="cv-bracket">&#123;</span></h3>
                 <span>technical engineer</span>
-                <h3>&#125;</h3>
+                <h3><span className="cv-bracket">&#125;</span></h3>
               </div>
             </li>
             <li>
               <div className="we-job">
-                <h3>ANT Company (2018 December - 2019 Jule) &#123;</h3>
+                <h3>ANT Company (2018 December - 2019 Jule) <span className="cv-bracket">&#123;</span></h3>
                 <span>programmer engineer</span>
-                <h3>&#125;</h3>
+                <h3><span className="cv-bracket">&#125;</span></h3>
               </div>
             </li>
           </ul>
+          <h2><span className="cv-bracket">&#125;</span></h2>
         </div>
 
         <div className="additional-skills">
-          <h2>Additional skills &#123;</h2>
+          <h2>Additional skills <span className="cv-bracket">&#123;</span></h2>
           <ul>
             <li>JavaScript</li>
             <li>MongoDB</li>
@@ -86,10 +85,10 @@ class CV extends React.Component {
             <li>Vue.js</li>
             <li>Adobe (PS, Il, AE)</li>
           </ul>
-          <h2>&#125;</h2>
+          <h2><span className="cv-bracket">&#125;</span></h2>
         </div>
 
-        <h1>&#125;;</h1>
+        <h1><span className="cv-bracket">&#125;</span>;</h1>
       </div>
     );
   }

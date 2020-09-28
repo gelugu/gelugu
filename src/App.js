@@ -1,26 +1,18 @@
-import React, { useEffect } from "react";
-import Context from "./context";
-import Loader from "./Loader";
-import Header from "./page/Header";
-import Body from "./page/Body";
-import Footer from "./page/Footer";
-import Modal from "./modal/Modal";
+import React from "react";
+
+import { BrowserRouter as Router } from "react-router-dom";
+
+import Routes from "./pages/routs";
+import Header from "./pages/Header";
 
 class App extends React.Component {
-  state = {
-    page: 'projects'
-  }
-  
-  updatePage = function (value) {
-    this.setState({ page: value });
-  };
-
   render() {
     return (
       <>
-        <Header updatePage={this.updatePage.bind(this)} />
-        <Body page={this.state.page} />
-        {/* <Footer/> */}
+        <Router>
+          <Header />
+          <Routes />
+        </Router>
       </>
     );
   }
