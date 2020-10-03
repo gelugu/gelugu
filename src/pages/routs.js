@@ -11,6 +11,7 @@ export default () => {
   return (
     <Switch>
       <Route path="/" component={CV} exact/>
+      <Route path="/gelugu" component={CV} exact/>
       <Route path="/projects" component={Projects} />
       <Route path="/contacts" component={Contacts} />
       <Route path="/blog" component={Blog} />
