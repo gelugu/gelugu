@@ -3,25 +3,19 @@ import "./cv.css";
 
 const CV = () => {
   return (
-    <div className="cv">
-      <h1>
-        Kraev Mikhail <span className="cv-bracket">&#123;</span>
-      </h1>
+    <div className="container-cv">
+      <div className="cv block block-l">
+      <h1>Kraev Mikhail</h1>
+      <span className="cv-quick-info">JS Engineer</span>
+      <span className="cv-quick-info">
+        <a href="mailto:kraev.mixail@gmail.com">kraev.mixail@gmail.com</a>
+      </span>
+      <span className="cv-quick-info">
+        <a href="tel:+7-905-280-22-88">+7 905 280 22 88</a>
+      </span>
 
-      <div className="cv-quick-info">
-        <span className="cv-qi-spec">// JS Engineer - React, React Native</span>
-        <span>
-          // <a href="mailto:kraev.mixail@gmail.com">kraev.mixail@gmail.com</a>
-        </span>
-        <span>
-          // <a href="tel:+7-905-280-22-88">+7 905 280 22 88</a>
-        </span>
-      </div>
-
-      <div className="about-me">
-        <h2>
-          About me <span className="cv-bracket">&#123;</span>
-        </h2>
+      <div className="about-me block block-m">
+        <h2>About me</h2>
         <p>
           Занимаюсь программированием около 4-х лет, начинал с С/С++. Позже
           пробовал себя в Python, JavaScript (HTML+CSS), React (-native), Vue,
@@ -48,90 +42,43 @@ const CV = () => {
           искать информацию как на русскоязычных, так и на англоязычных
           ресурсах. Техническую литературу воспринимаю отлично.
         </p>
-        <h2>
-          <span className="cv-bracket">&#125;</span>
-        </h2>
       </div>
 
-      <div className="education">
-        <h2>
-          Education <span className="cv-bracket">&#123;</span>
-        </h2>
-        <p>School - ВСОШ №1</p>
-        <p>University - ETU “LETI” (undergraduate)</p>
-        <h2>
-          <span className="cv-bracket">&#125;</span>
-        </h2>
+      <div className="education block block-m">
+        <h2>Education</h2>
+        <span>School - ВСОШ №1</span>
+        <span>University - ETU “LETI” (undergraduate)</span>
       </div>
 
-      <div className="work-experience">
-        <h2>
-          Work experience <span className="cv-bracket">&#123;</span>
-        </h2>
-        <ul>
-          <li>
-            <div className="we-job">
-              <h3>
-                Smart3d (2017 October - 2018 Jule){" "}
-                <span className="cv-bracket">&#123;</span>
-              </h3>
-              <span>technical engineer</span>
-              <h3>
-                <span className="cv-bracket">&#125;</span>
-              </h3>
-            </div>
-          </li>
-          <li>
-            <div className="we-job">
-              <h3>
-                ANT Company (2018 December - 2019 Jule){" "}
-                <span className="cv-bracket">&#123;</span>
-              </h3>
-              <span>programmer engineer</span>
-              <h3>
-                <span className="cv-bracket">&#125;</span>
-              </h3>
-            </div>
-          </li>
-          <li>
-            <div className="we-job">
-              <h3>
-                VTB Group (2020 September - Now){" "}
-                <span className="cv-bracket">&#123;</span>
-              </h3>
-              <span>devops engineer</span>
-              <h3>
-                <span className="cv-bracket">&#125;</span>
-              </h3>
-            </div>
-          </li>
-        </ul>
-        <h2>
-          <span className="cv-bracket">&#125;</span>
-        </h2>
+      <div className="work-experience block block-m">
+        <h2>Work experience</h2>
+        <div className="we-job block block-s">
+          <h3>Smart3d (2017 October - 2018 Jule) </h3>
+          <span>technical engineer</span>
+        </div>
+        <div className="we-job block block-s">
+          <h3>ANT Company (2018 December - 2019 Jule) </h3>
+          <span>robotics programmer engineer</span>
+        </div>
+        <div className="we-job block block-s">
+          <h3>VTB Group (2020 September - Now) </h3>
+          <span>devops engineer</span>
+        </div>
       </div>
 
-      <div className="additional-skills">
-        <h2>
-          Additional skills <span className="cv-bracket">&#123;</span>
-        </h2>
-        <ul>
-          <li>JavaScript</li>
-          <li>MongoDB</li>
-          <li>Git</li>
-          <li>Linux</li>
-          <li>React</li>
-          <li>Vue.js</li>
-          <li>Adobe (PS, Il, AE)</li>
-        </ul>
-        <h2>
-          <span className="cv-bracket">&#125;</span>
-        </h2>
+      <div className="additional-skills block block-m">
+        <h2>Additional skills</h2>
+          <span>JavaScript</span>
+          <span>React</span>
+          <span>React Native</span>
+          <span>MongoDB</span>
+          <span>Git</span>
+          <span>Linux</span>
+          <span>React</span>
+          <span>Vue.js</span>
+          <span>Adobe (PS, Il, AE)</span>
       </div>
-
-      <h1>
-        <span className="cv-bracket">&#125;</span>;
-      </h1>
+    </div>
     </div>
   );
 };

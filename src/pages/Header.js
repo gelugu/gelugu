@@ -1,9 +1,16 @@
-import React from "react";
+import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
+import { Redirect } from 'react-router';
 
 import "./page.css";
 
 const Header = () => {
+  const [cheat, setCheat] = useState('');
+
+  if (cheat === "auth") {
+    return <Redirect push to="/auth"/>
+  }
+
   return (
     <header className="header">
       <nav className="navBar">
@@ -13,12 +20,13 @@ const Header = () => {
         <NavLink className="headerLink" to="/projects">
           projects
         </NavLink>
-        <NavLink className="headerLink" to="/contacts">
+        {/* <NavLink className="headerLink" to="/contacts">
           contacts
         </NavLink>
         <NavLink className="headerLink" to="/blog">
           blog
-        </NavLink>
+        </NavLink> */}
+      <input className="cheat" value={cheat} onChange={({nativeEvent}) => (setCheat(cheat + nativeEvent.data))}/>
       </nav>
     </header>
   );

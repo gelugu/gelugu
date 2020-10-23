@@ -36,3 +36,11 @@
 .content {
   margin: 1rem 3rem;
 }
+
+.cheat {
+  background-color: var(--grey);
+  color: var(--grey);
+  border: none;
+  margin-left: auto;
+  width: 2rem;
+}

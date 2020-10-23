@@ -5,6 +5,11 @@
 /.pnp
 .pnp.js
 
+# private
+/firebase
+firebase
+TODO.md
+
 # testing
 /coverage
 

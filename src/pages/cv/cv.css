@@ -1,56 +1,79 @@
-.cv {
-  margin-left: 5rem;
+.container-cv {
+  margin: 0 15rem;
 }
 
-h1{
+.cv {
+  margin: 0 1rem;
+}
+
+h1, h2, h3 {
   color: var(--light-grey);
 }
-h2{
-  color: var(--light-grey);
+
+.block :not(:first-child) {
+  margin-left: 2rem;
 }
-h3{
-  color: var(--light-grey)
+.block > h1::after {
+  content: " {";
+  color: var(--yellow);
+}
+.block > h2::after {
+  content: " {";
+    color: var(--yellow);
+}
+.block > h3::after {
+  content: " (";
+    color: var(--yellow);
+}
+.block::after {
+  content: "}";
+  color: var(--yellow);
+}
+.block-l::after {
+  content: "};";
+  font-size: 2rem;
+}
+.block-m::after {
+  font-size: 1.5rem;
+}
+.block-s::after {
+  content: ")";
+  font-size: 1.2rem;
 }
 
 .cv-bracket {
-  color:var(--yellow);
+  color: var(--yellow);
 }
 
 .cv-quick-info {
-  margin-left: 4rem;
   display: flex;
-  flex-direction: column;
-
   color: var(--green);
+}
+.cv-quick-info::before {
+  content: "// ";
+  white-space: pre;
 }
 
 .cv-qi-phone {
 }
 
 .about-me {
-  margin-left: 2rem;
-  max-width: 40rem;
-}
-
-.about-me {
   padding: 0;
-  margin-left: 2rem;
+  max-width: 40rem;
 }
 .about-me p {
   padding: 0;
-  margin-left: 2rem;
 }
 
 .education {
-  margin-left: 2rem;
+  display: flex;
+  flex-direction: column;
 }
 
 .education p {
-  margin-left: 2rem;
 }
 
 .work-experience {
-  margin-left: 2rem;
 }
 .work-experience h3 {
   margin: 0;
@@ -62,21 +85,29 @@ h3{
 }
 
 .we-job {
-  margin-left: 2rem;
+  display: flex;
+  flex-direction: column;
 }
 .we-job span {
-  margin-left: 1rem;
 }
 .we-job .cv-bracket {
   margin-left: 0;
 }
 
-
 .additional-skills {
-  margin-left: 2rem;
+  display: flex;
+  flex-direction: column;
 }
-.additional-skills ul {
-  list-style: none;
-  padding: 0;
-  margin-left: 2rem;
+.additional-skills span::after {
+  content: ",";
+}
+
+/* mobile */
+@media screen and (max-width: 768px) {
+  .container-cv {
+    margin: 0;
+  }
+  .block :not(:first-child) {
+    margin-left: 1rem;
+  }
 }

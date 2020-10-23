@@ -20,7 +20,7 @@ body {
 }
 
 a {
-  color: var(--green);
+  color: var(--yellow);
 }
 a:link {
   text-decoration: none;
