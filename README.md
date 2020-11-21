@@ -5,13 +5,13 @@
 	//  +7 905 280 22 88
 ```
 ## About me &#123;
-Занимаюсь программированием около 4-х лет, начинал с С/С++. Позже пробовал себя в Python, JavaScript (HTML+CSS), React (-native), Vue, Java, пентестинге. Есть опыт работы в микропроцессорном программировании, работал как с проектами Arduino, так и с микропроцессорами семейства STM32.
+I've been programming for about 4 years, I started with C / C ++. Later I tried myself in Python, JavaScript (HTML + CSS), React (-native), Vue, Java, pentesting. I have experience in microprocessor programming, worked with Arduino and STM32.
 
-За всё это время я твёрдо убедился, что люблю "Кодить". Везде. На всём. Всё. JS/React - одно из наиболее развивающихся направлений, почти всё, что я могу придумать - я могу реализовать на React. За это я люблю JS.
+During all this time, I was firmly convinced that I love to code. Everywhere. On everything. All. JS / React is one of the fastest growing route. Everything I can think of - I can implement in React. That's why I love JS.
 
-Увлечён своим делом и постоянно учусь чему-то новому. Изучаю смежные со сферой разработки профессии, такие как дизайн, тестирование и т.д., потому понимаю, как важно учитывать возможности других членов команды при написании кода.
+I am realy passionate about my work and I am constantly learning something new. I study related to the field of development professions, such as design, testing, etc., therefore I understand how important it is to consider the capabilities of other team members when writing code and can see my code from other angles.
 
-Несмотря на это, к сожалению, имею небольшой опыт работы в команде, в основном работал один. Общителен, проблем в коллективе никогда не было. Всегда с интересом разбирался в новых и сложных задачах, умею искать информацию как на русскоязычных, так и на англоязычных ресурсах. Техническую литературу воспринимаю отлично.
+Despite this, unfortunately, I have little experience working in a team, mostly I worked alone. I have always understood new and complex tasks with interest, I can search for information both in Russian and in English resources. Also I perceive technical literature very well.
 ## &#125;
 
 ## Education &#123;
