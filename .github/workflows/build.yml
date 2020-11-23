@@ -1,7 +1,28 @@
 ---
 # build.yml
 name: "Build"
-description: "Create weppage build"
-runs:
-  using: "docker"
-  image: "./cicd/Dockerfile"
+on:
+  push:
+    branches:
+      - master
+jobs:
+#   Test:
+#     runs-on: ubuntu-latest
+#     steps:
+#       - name: install global dependencies
+#         run: nom i -g react-scripts
+#       - name: install local dependencies
+#         run: npm ci
+#       - name: start tests
+#         run: npm react-scripts test
+
+  Build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: install global dependencies
+        run: npm i -g react-scripts
+      - name: install local dependencies
+        run: npm ci
+      - name: start tests
+        run: react-scripts build
+
