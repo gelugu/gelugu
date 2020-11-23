@@ -5,6 +5,8 @@ on:
   push:
     branches:
       - master
+env:
+  SKIP_PREFLIGHT_CHECK: true 
 jobs:
   Build:
     runs-on: ubuntu-latest
