@@ -20,7 +20,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: install global dependencies
-        run: npm i -g react-scripts
+        run: sudo npm i -g react-scripts
       - name: install local dependencies
         run: npm ci
       - name: start tests
