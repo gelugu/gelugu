@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 name: Build
 
 on:
@@ -11,3 +12,27 @@ jobs:
     - uses: actions/checkout@v2
     - name: Build the Docker image
       run: docker build . --file ./cicd/Dockerfile --tag ghcr.io/$GITHUB_REPOSITORY:$GITHUB_REF
+=======
+---
+# build.yml
+name: "Build"
+on:
+  push:
+    branches:
+      - master
+env:
+  SKIP_PREFLIGHT_CHECK: true 
+jobs:
+  Build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: install global dependencies
+        run: sudo npm i -g react-scripts
+      - name: clone repo
+        uses: actions/checkout@v1
+      - name: install local dependencies
+        run: npm ci
+      - name: start tests
+        run: react-scripts build
+
+>>>>>>> 3be5be420580573ad746182c73c144ea6eed56b9
