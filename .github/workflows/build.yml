@@ -1,7 +1,13 @@
----
-# build.yml
-name: "Build"
-description: "Create weppage build"
-runs:
-  using: "docker"
-  image: "./cicd/Dockerfile"
+name: Build
+
+on:
+  push:
+    branches: [ master ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+    - name: Build the Docker image
+      run: docker build . --file ./cicd/Dockerfile --tag ghcr.io/$GITHUB_REPOSITORY:$GITHUB_REF

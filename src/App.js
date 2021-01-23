@@ -2,18 +2,22 @@ import React from "react";
 
 import { BrowserRouter as Router } from "react-router-dom";
 
-import Routes from "./pages/routs";
+import { Routes } from "./routs";
 import Header from "./pages/Header";
+import { AuthContext } from "./AuthContext";
+import { useAuth } from "./hooks/useAuth";
 
-class App extends React.Component {
-  render() {
-    return (
+const App = () => {
+  const { login, logout, isLogin } = useAuth();
+
+  return (
+    <AuthContext.Provider value={{ login, logout, isLogin }}>
       <Router>
-        {/* <Header />
-        <Routes /> */}
+        <Header />
+        <Routes />
       </Router>
-    );
-  }
-}
+    </AuthContext.Provider>
+  );
+};
 
 export default App;

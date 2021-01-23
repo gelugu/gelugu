@@ -1,13 +1,14 @@
 import React from "react"
 import {Switch, Route} from "react-router-dom"
 
-import CV from "./cv/Cv";
-import Projects from "./projects/Projects";
+import CV from "./pages/cv/Cv";
+import Projects from "./pages/projects/Projects";
 // import Contacts from "./contacts/Contacts";
 // import Blog from "./blog/Blog";
-// import Auth from "./auth/Auth";
+import {Auth} from "./pages/auth/Auth";
 
-export default () => {
+export const Routes = () => {
+  
   return (
     <Switch>
       <Route path="/" component={CV} exact/>
@@ -15,7 +16,7 @@ export default () => {
       <Route path="/projects" component={Projects} />
       {/* <Route path="/contacts" component={Contacts} /> */}
       {/* <Route path="/blog" component={Blog} /> */}
-      {/* <Route path="/auth" component={Auth} /> */}
+      <Route path="/auth" component={Auth} />
     </Switch>
   )
 }
