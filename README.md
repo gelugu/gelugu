@@ -18,7 +18,8 @@
       openshift | k8s,
       gradle | kotlinDSL,
       mobileDevOps<Android>,
-    }
+    },
+    everythingIsACode: true
   }
 
   contacts: {
