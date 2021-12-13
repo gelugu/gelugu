@@ -23,8 +23,8 @@
   }
 
   contacts: {
-    mail: kraev.mixail@gmail.com,
-    telegram: @gelugu
+    mail: "kraev.mixail@gmail.com",
+    telegram: "@gelugu"
   }
 ```
 ## About me
