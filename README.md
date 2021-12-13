@@ -1,6 +1,6 @@
 # main
 ```js
-  name = Kraev Mikhail
+  name = "Kraev Mikhail"
 
   skils {
     programmingLanguages: {
