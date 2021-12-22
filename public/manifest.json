@@ -1,6 +1,6 @@
 {
-  "short_name": "portfolio",
-  "name": "Gelugu portfolio",
+  "short_name": "gelugu",
+  "name": "Gelugu",
   "icons": [
     {
       "src": "favicon.ico",
@@ -20,6 +20,6 @@
   ],
   "start_url": ".",
   "display": "standalone",
-  "theme_color": "#e8eddf",
+  "theme_color": "#f5cb5c",
   "background_color": "#242423"
 }
