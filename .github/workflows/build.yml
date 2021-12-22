@@ -1,38 +1,26 @@
-<<<<<<< HEAD
-name: Build
+name: Deploy to actions
 
 on:
   push:
-    branches: [ master ]
+    branches: [ "master" ]
 
 jobs:
   build:
     runs-on: ubuntu-latest
-    steps:
-    - uses: actions/checkout@v2
-    - name: Build the Docker image
-      run: docker build . --file ./cicd/Dockerfile --tag ghcr.io/$GITHUB_REPOSITORY:$GITHUB_REF
-=======
----
-# build.yml
-name: "Build"
-on:
-  push:
-    branches:
-      - master
-env:
-  SKIP_PREFLIGHT_CHECK: true 
-jobs:
-  Build:
-    runs-on: ubuntu-latest
-    steps:
-      - name: install global dependencies
-        run: sudo npm i -g react-scripts
-      - name: clone repo
-        uses: actions/checkout@v1
-      - name: install local dependencies
-        run: npm ci
-      - name: start tests
-        run: react-scripts build
 
->>>>>>> 3be5be420580573ad746182c73c144ea6eed56b9
+    steps:
+      - uses: actions/checkout@v2
+      
+      - name: Setup Node.js environment
+        uses: actions/setup-node@v2.4.0
+        with:
+          node-version: 14.x
+      
+      - run: npm ci
+      - run: npm run build
+
+      - name: Deploy
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./build

@@ -1,25 +1,10 @@
-import React, { useEffect, useState } from "react";
-import { useAuth } from "../../hooks/useAuth";
-import { FBread } from "../../firebase";
+import React from "react";
 import "./cv.css";
 
 const CV = () => {
-  const [admin, setAdmin] = useState(false);
-  const [cv, setCv] = useState({});
-  const { isLogin } = useAuth();
-
-  // useEffect(async () => {
-  //   setCv(FBread("", "cv"));
-  // }, []);
-
-  useEffect(async () => {
-    setAdmin(await isLogin());
-  }, [isLogin]);
-
   return (
     <div className="container-cv">
       <div className="cv block block-l">
-        {/* <h1 contentEditable={admin}>{cv.name}</h1> */}
         <span className="cv-quick-info">JS Engineer</span>
         <span className="cv-quick-info">
           <a href="mailto:kraev.mixail@gmail.com">kraev.mixail@gmail.com</a>
